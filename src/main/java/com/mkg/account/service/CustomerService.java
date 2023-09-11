@@ -22,7 +22,7 @@ public class CustomerService {
 
     protected Customer findCustomerById(String id) {
         return customerRepository.findById(id)
-                .orElseThrow(() -> new CustomerNotFoundException("Customer not found with given id" + id));
+                .orElseThrow(() -> new CustomerNotFoundException("Customer not found with given id: " + id));
     }
 
     public CustomerDto getCustomerById(String id) {

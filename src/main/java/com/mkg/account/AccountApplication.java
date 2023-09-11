@@ -28,8 +28,8 @@ public class AccountApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) {
-		Customer customer = customerRepository.save(new Customer("Cagri", "Dursun"));
-		Customer customer2 = customerRepository.save(new Customer("Alice", "Bob"));
+		Customer customer = customerRepository.save(new Customer("Ali", "Yilmaz"));
+		Customer customer2 = customerRepository.save(new Customer("Ayse", "Kaya"));
 
 		System.out.println(customer);
 		System.out.println(customer2);
